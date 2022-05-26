@@ -1,0 +1,24 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 16px;
+  margin-top: 58px;
+}
+
+.logo {
+  width: 76px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.logo p {
+  color: #6070ff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
