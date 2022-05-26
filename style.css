@@ -22,3 +22,63 @@
   font-size: 18px;
   line-height: 20px;
 }
+
+.headline {
+  width: 375px;
+  height: 718px;
+  background-image: url("./images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 70px 24px;
+}
+
+.headline h1 {
+  width: 327px;
+  height: 150px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  list-style: 20px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.headline p {
+  width: 327px;
+  height: 146px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.headline h3 {
+  color: #7f8cff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social-media-icons {
+  width: 170.17px;
+  height: 20px;
+}
+
+.social-media-icons .twitter,
+.linkedin,
+.mail,
+.github {
+  margin-right: 10px;
+}
