@@ -9,7 +9,6 @@
 .logo {
   width: 76px;
   height: 20px;
-
   display: flex;
   align-items: center;
   text-align: center;
@@ -17,7 +16,7 @@
 
 .logo p {
   color: #6070ff;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 20px;
@@ -28,7 +27,6 @@
   height: 718px;
   background-image: url("./images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,7 +36,7 @@
 .headline h1 {
   width: 327px;
   height: 150px;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -54,7 +52,7 @@
 .headline p {
   width: 327px;
   height: 146px;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -64,7 +62,7 @@
 
 .headline h3 {
   color: #7f8cff;
-  font-family: "Poppins";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
