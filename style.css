@@ -14,12 +14,14 @@
   text-align: center;
 }
 
-.logo p {
+.logo a {
   color: #6070ff;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 .headline {
