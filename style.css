@@ -280,7 +280,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 8px;
-  
+
   /* gap: 10px; */
   width: 124px;
   height: 48px;
@@ -290,7 +290,6 @@ body {
 }
 
 .left-block .btn-text {
-  
   /* width: 100px; */
   height: 24px;
   font-style: normal;
@@ -369,13 +368,12 @@ body {
   padding: 0;
 
   /* gap: 8px; */
-  
+
   /* width: 121px; */
   height: 24px;
 }
 
 .top .social-media .h3 {
-  
   /* width: 121px; */
   height: 24px;
   font-style: normal;
@@ -418,7 +416,6 @@ body {
 }
 
 .top .button {
-  
   /* width: 138px; */
   height: 24px;
   font-style: normal;
