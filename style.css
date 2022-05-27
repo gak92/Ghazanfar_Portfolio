@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0px;
+  margin: 0;
 }
 
 /* .main-container {
@@ -101,6 +101,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   padding: 114px 24px;
+
   /* padding: 0 24px 114px 24px; */
   border: 1px solid green;
   gap: 88px;
@@ -115,9 +116,10 @@ body {
   gap: 12px;
   width: 327px;
   height: 552px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+
   /* margin-bottom: 12px; */
 }
 
@@ -132,7 +134,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 295px;
   height: 288px;
@@ -142,8 +144,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   gap: 12px;
   width: 295px;
   height: 80px;
@@ -163,7 +165,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 236px;
   height: 32px;
@@ -173,7 +175,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0;
   width: 55px;
   height: 32px;
   font-style: normal;
@@ -195,7 +197,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0;
   width: 106px;
   height: 32px;
 }
@@ -244,7 +246,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 230px;
   height: 24px;
@@ -252,6 +254,7 @@ body {
 
 .left-block .tag {
   padding: 4px 12px;
+
   /* width: auto; */
   height: 24px;
   background: #ebebff;
@@ -277,15 +280,17 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 8px;
+  
   /* gap: 10px; */
   width: 124px;
   height: 48px;
-  left: 0px;
+  left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
 .left-block .btn-text {
+  
   /* width: 100px; */
   height: 24px;
   font-style: normal;
@@ -319,7 +324,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 327px;
   height: 409px;
@@ -351,7 +356,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 200px;
   height: 80px;
@@ -361,13 +366,16 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
+
   /* gap: 8px; */
+  
   /* width: 121px; */
   height: 24px;
 }
 
 .top .social-media .h3 {
+  
   /* width: 121px; */
   height: 24px;
   font-style: normal;
@@ -381,7 +389,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
 }
@@ -402,6 +410,7 @@ body {
   align-items: center;
   padding: 12px;
   gap: 10px;
+
   /* width: 162px; */
   height: 48px;
   border: 1px solid #6070ff;
@@ -409,6 +418,7 @@ body {
 }
 
 .top .button {
+  
   /* width: 138px; */
   height: 24px;
   font-style: normal;
@@ -422,12 +432,12 @@ body {
   color: #396df2;
 }
 
-/* SkillSet Div*/
+/* SkillSet Div */
 .skillset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
 }
