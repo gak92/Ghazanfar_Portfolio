@@ -289,7 +289,6 @@ body {
   gap: 10px;
   width: 124px;
   height: 48px;
-  /* left: 0; */
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -480,7 +479,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 320.15px;
 }
