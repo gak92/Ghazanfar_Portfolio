@@ -10,20 +10,23 @@
 - HTML and CSS
 - No Frameworks
 - Visual Studio and Git
+- Linters
 
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**This project is part of Microverse first module course. This is used to build the personal portfolio to showcase the skills.**
+**To get the local copy of this clone following repository or download as zip:**
+**https://github.com/gak92/Ghazanfar_Portfolio.git**
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@gak92](https://github.com/gak92)
+- GitHub: Ghazanfar Ali [@gak92](https://github.com/gak92)
+- LinkedIn: Ghazanfar Ali (https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
 
 ## 🤝 Contributing
@@ -38,9 +41,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This project is part of Microverse study program.
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to Figma Design Template
+- Thanks to Code Reviewers for the insightful feedback.
+- A great thanks to My coding partners, morning session team, and standup team Partners for their contributions and suggestions.
 
 ## 📝 License
 
