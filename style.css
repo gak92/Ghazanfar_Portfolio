@@ -248,9 +248,9 @@ body {
 }
 
 .left-block .tag-box {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   padding: 0;
   gap: 8px;
   width: 230px;
@@ -549,4 +549,14 @@ body {
   padding-left: 12px;
   padding-right: 22px;
   border-bottom: 1px solid #dfe1e6;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background-color: #6070FF;
+  width: 375px;
+  height: 779px;
+  background-image: url(./images/contact/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
