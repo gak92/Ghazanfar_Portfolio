@@ -10,6 +10,13 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  background: #e5e5e5;
+}
+
+.top-bar {
+  width: 375px;
+  height: 44px;
+  background-color: #fff;
 }
 
 .toolbar {
@@ -17,7 +24,6 @@ body {
   justify-content: space-between;
   padding-left: 24px;
   padding-right: 16px;
-  margin-top: 58px;
   background-color: #fff;
   width: 375px;
 }
@@ -272,39 +278,36 @@ body {
   align-items: center;
 }
 
-.left-block .btn {
+/* BUTTON */
+
+.btn {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 12px;
-  gap: 10px;
-  width: 124px;
-  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  background-color: #fff;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border-radius: 8px;
 }
 
-.left-block .btn-project {
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background-color: #fff;
-}
-
-.left-block .btn-project:hover {
+.btn:hover {
   background: #6070ff;
   color: #fff;
 }
 
-.left-block .btn-project:active {
+.btn:active {
   background: #2230d2;
   color: #fff;
 }
 
-.left-block .btn-project:disabled {
+.btn:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
 }
@@ -427,43 +430,6 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-}
-
-.top .btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.top .btn-resume {
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background-color: #fff;
-}
-
-.top .btn-resume:hover {
-  background: #6070ff;
-  color: #fff;
-}
-
-.top .btn-resume:active {
-  background: #2230d2;
-  color: #fff;
-}
-
-.top .btn-resume:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
 }
 
 /* SkillSet Div */
@@ -643,41 +609,4 @@ textarea {
 
 .contact-form textarea::placeholder {
   color: #b3bac5;
-}
-
-.contact-section .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  border-radius: 8px;
-  width: 140px;
-  height: 48px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.contact-section .btn-contact {
-  border: 1px solid #6070ff;
-  color: #6070ff;
-  background-color: #fff;
-}
-
-.contact-section .btn-contact:hover {
-  background: #6070ff;
-  color: #fff;
-}
-
-.contact-section .btn-contact:active {
-  background: #2230d2;
-  color: #fff;
-}
-
-.contact-section .btn-contact:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
 }
