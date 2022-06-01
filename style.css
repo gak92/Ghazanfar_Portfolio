@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-}
-
-.main-container {
-  background-color: #e5e5e5;
+  padding: 0;
 }
 
 .toolbar {
@@ -20,6 +19,7 @@ body {
   padding-right: 16px;
   margin-top: 58px;
   background-color: #fff;
+  width: 375px;
 }
 
 .logo {
