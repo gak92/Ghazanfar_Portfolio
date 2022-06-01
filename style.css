@@ -10,6 +10,13 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  background: #e5e5e5;
+}
+
+.top-bar {
+  width: 375px;
+  height: 44px;
+  background-color: #fff;
 }
 
 .toolbar {
@@ -17,7 +24,6 @@ body {
   justify-content: space-between;
   padding-left: 24px;
   padding-right: 16px;
-  margin-top: 58px;
   background-color: #fff;
   width: 375px;
 }
