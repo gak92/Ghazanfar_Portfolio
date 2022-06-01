@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-}
-
-.main-container {
-  background-color: #e5e5e5;
+  padding: 0;
 }
 
 .toolbar {
@@ -20,6 +19,7 @@ body {
   padding-right: 16px;
   margin-top: 58px;
   background-color: #fff;
+  width: 375px;
 }
 
 .logo {
@@ -98,13 +98,12 @@ body {
 }
 
 /* WORK SECTION */
+
 #work {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   padding: 114px 24px;
-
-  /* padding: 0 24px 114px 24px; */
   gap: 88px;
   background: #e5e5e5;
 }
@@ -120,8 +119,6 @@ body {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-
-  /* margin-bottom: 12px; */
 }
 
 .snapshot-portfolio {
@@ -248,9 +245,6 @@ body {
 }
 
 .left-block .tag-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 0;
   gap: 8px;
   width: 230px;
@@ -259,8 +253,6 @@ body {
 
 .left-block .tag {
   padding: 4px 12px;
-
-  /* width: auto; */
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -318,6 +310,7 @@ body {
 }
 
 /* ABOUT MYSELF SECTION */
+
 #aboutmyself {
   display: flex;
   flex-direction: column;
@@ -331,6 +324,7 @@ body {
 }
 
 /* top Div */
+
 .top {
   display: flex;
   flex-direction: column;
@@ -380,15 +374,10 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0;
-
-  /* gap: 8px; */
-
-  /* width: 121px; */
   height: 24px;
 }
 
 .top .social-media .letsconnect {
-  /* width: 121px; */
   height: 24px;
   font-style: normal;
   font-weight: 500;
@@ -407,8 +396,23 @@ body {
   height: 40px;
 }
 
+.contact-section ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
 .top .social-media ul {
   list-style-type: none;
+}
+
+.contact-section ul li {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 16px;
 }
 
 .top .social-media ul li {
@@ -431,8 +435,6 @@ body {
   align-items: center;
   padding: 12px;
   gap: 10px;
-
-  /* width: 162px; */
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -465,6 +467,7 @@ body {
 }
 
 /* SkillSet Div */
+
 .skillset {
   display: flex;
   flex-direction: column;
@@ -549,4 +552,132 @@ body {
   padding-left: 12px;
   padding-right: 22px;
   border-bottom: 1px solid #dfe1e6;
+}
+
+/* CONTACT SECTION */
+.white-bg {
+  background-color: #fff;
+  width: 375px;
+  height: 779px;
+}
+
+.contact-section {
+  background-color: #6070ff;
+  width: 375px;
+  height: 779px;
+  background-image: url(./images/contact/contact\ form\ shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 153px 21px;
+  padding: 114px 0;
+  border-top-left-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-heading,
+.contact-para {
+  color: #fff;
+  width: 327px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+#name,
+#email,
+#message {
+  outline: none;
+}
+
+.contact-form {
+  width: 327px;
+}
+
+input,
+textarea {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.contact-form input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.contact-form input::placeholder {
+  color: #172b4d;
+}
+
+.contact-form textarea {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  resize: none;
+}
+
+.contact-form textarea::placeholder {
+  color: #b3bac5;
+}
+
+.contact-section .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  width: 140px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contact-section .btn-contact {
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  background-color: #fff;
+}
+
+.contact-section .btn-contact:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.contact-section .btn-contact:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.contact-section .btn-contact:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
 }

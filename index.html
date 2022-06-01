@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Ghazanfar Portfolio</title>
   </head>
+
   <body>
     <div class="main-container">
       <!-- HEADER SECTION -->
@@ -280,6 +281,59 @@
         </ul>
         <!-- End of SkillSet -->
       </section>
+      <!-- CONTACT FORM -->
+      <section class="white-bg">
+        <div class="contact-section">
+          <h2 class="contact-heading">Contact me</h2>
+          <p class="contact-para">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form
+            action="https://formspree.io/f/mzboowzg"
+            method="post"
+            class="contact-form"
+          >
+            <ul>
+              <li>
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="username"
+                  maxlength="30"
+                  placeholder="Ghazanfar Ali"
+                  required
+                />
+              </li>
+              <li>
+                <label for="email"></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="useremail"
+                  placeholder="gz123@gmail.com"
+                  required
+                />
+              </li>
+              <li>
+                <label for="message"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  maxlength="500"
+                  rows="5"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </li>
+            </ul>
+            <button class="btn btn-contact" type="submit">Get it Touch</button>
+          </form>
+        </div>
+      </section>
+      <!-- End of Contact Section -->
     </div>
     <!-- End of Main Container -->
   </body>
