@@ -13,11 +13,15 @@ body {
   background: #e5e5e5;
 }
 
+/* TOP BAR */
+
 .top-bar {
   width: 375px;
   height: 44px;
   background-color: #fff;
 }
+
+/* HEADER */
 
 .toolbar {
   display: flex;
@@ -26,6 +30,10 @@ body {
   padding-right: 16px;
   background-color: #fff;
   width: 375px;
+}
+
+.toolbar .navbar-list {
+  display: none;
 }
 
 .logo {
@@ -45,6 +53,7 @@ body {
   text-decoration: none;
 }
 
+/* Headline Section */
 .headline {
   width: 375px;
   height: 718px;
@@ -609,4 +618,89 @@ textarea {
 
 .contact-form textarea::placeholder {
   color: #b3bac5;
+}
+
+/* DESKTOP VERSION */
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .toolbar {
+    width: 100%;
+    height: 72px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    padding-left: 143px;
+    padding-right: 142px;
+  }
+
+  .toolbar .icon {
+    display: none;
+  }
+  
+  .toolbar ul {
+    list-style-type: none;
+  }
+
+  .toolbar a {
+    text-decoration: none;
+  }
+
+  .toolbar .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  /* Desktop Headline Section */
+
+  .headline {
+    width: 100%;
+    height: 846px;
+    background-color: lightcoral;
+    background-image: url("./images/desktop/Header\ bg.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 24px 70px 260px;
+    border-bottom-left-radius: 80px;
+  }
+  
+  .headline h1 {
+    background-color: #6070ff;
+    width: 420px;
+    height: 122px;
+    margin-bottom: 0;
+    margin-top: 200px;
+  }
+
+  .headline p {
+    background-color: #172b4d;
+    width: 720px;
+    height: 98px;
+    margin-bottom: 0;
+  }
+
+  .headline h3 {
+    background-color: #7f8cff;
+  }
+
+  /* Work Section */
+
 }
