@@ -625,9 +625,7 @@ textarea {
 }
 
 /* DESKTOP VERSION */
-
 @media only screen and (min-width: 768px) {
-  
   .top-bar {
     display: none;
   }
@@ -644,7 +642,7 @@ textarea {
   .toolbar .icon {
     display: none;
   }
-  
+
   .toolbar ul {
     list-style-type: none;
   }
@@ -659,7 +657,6 @@ textarea {
     align-items: center;
     text-align: center;
     gap: 32px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -681,7 +678,7 @@ textarea {
     padding: 70px 24px 70px 260px;
     border-bottom-left-radius: 80px;
   }
-  
+
   .headline h1 {
     width: 420px;
     height: 122px;
@@ -707,7 +704,7 @@ textarea {
     flex-direction: row;
     width: 1156px;
     height: 496px;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 24px;
     gap: 22px;
     padding: 24px;
@@ -723,15 +720,15 @@ textarea {
     border-radius: 8px;
   }
 
-  #card2 .left-block,
-  #card4 .left-block {
-    order: -1;
-  }
-
   .left-block {
     width: 544px;
     height: 445px;
     padding: 24px;
+  }
+
+  #card2 .left-block,
+  #card4 .left-block {
+    order: -1;
   }
 
   .left-block .title-box {
@@ -753,7 +750,7 @@ textarea {
     flex-direction: row;
     justify-content: center;
     gap: 49px;
-    padding: 0px 142px;
+    padding: 0 142px;
     width: auto;
     height: 724px;
   }
@@ -821,7 +818,7 @@ textarea {
     margin: 0;
     padding: 0;
   }
-  
+
   /* Contact Section */
 
   .white-bg {
@@ -829,7 +826,7 @@ textarea {
     width: 100%;
     height: 846px;
   }
-  
+
   .contact-section {
     background-color: #6070ff;
     width: 100%;
@@ -855,5 +852,4 @@ textarea {
     text-align: center;
     margin: auto;
   }
-
 }
