@@ -658,13 +658,14 @@ textarea {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 32px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    margin-right: 80px;
   }
 
   /* Desktop Headline Section */
@@ -759,6 +760,7 @@ textarea {
 
   #aboutmyself .top {
     width: 447px;
+    gap: 25px;
   }
 
   #aboutmyself .skillset {
