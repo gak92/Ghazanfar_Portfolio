@@ -142,6 +142,10 @@ body {
   border-radius: 8px;
 }
 
+.desktop-portfolio-img {
+  display: none;
+}
+
 .left-block {
   display: flex;
   flex-direction: column;
@@ -702,5 +706,61 @@ textarea {
   }
 
   /* Work Section */
+
+  #work {
+    padding: 114px 142px;
+    justify-content: center;
+  }
+
+  .card-works {
+    display: flex;
+    flex-direction: row;
+    width: 1156px;
+    height: 496px;
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .snapshot-portfolio {
+    display: none;
+  }
+
+  .desktop-portfolio-img {
+    display: block;
+    width: auto;
+    /* height: 220px; */
+    border-radius: 8px;
+  }
+
+  #card2 .left-block,
+  #card4 .left-block {
+    order: -1;
+  }
+
+  .left-block {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0; */
+    /* gap: 12px; */
+    width: 544px;
+    height: 445px;
+    padding: 24px;
+  }
+
+  .left-block .title-box {
+    width: auto;
+  }
+
+  .left-block .project-title {
+    width: auto;
+  }
+
+  .left-block .description-box {
+    width: auto;
+  }
 
 }
