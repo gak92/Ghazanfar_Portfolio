@@ -11,16 +11,30 @@
   <body>
     <div class="main-container">
       <div class="top-bar"></div>
+
       <!-- HEADER SECTION -->
       <header class="toolbar">
         <div class="logo">
           <a href="#">My Logo</a>
         </div>
 
-        <nav class="icon">
-          <img src="./images/Union.png" alt="Menu Icon" />
+        <nav class="navbar">
+          <img src="./images/Union.png" alt="Menu Icon" class="icon" />
+          <ul class="navbar-list">
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </nav>
       </header>
+      <!-- End of Header Section -->
+
       <!-- HEADLINE SECTION -->
       <section class="headline">
         <h1>I’m Ghazanfar Ali Glad to see you!</h1>
@@ -55,14 +69,22 @@
           />
         </div>
       </section>
+      <!-- End of Headline Section -->
+
       <!-- WORK SECTION -->
       <section id="work">
-        <div class="card-works">
+        <div id="card1" class="card-works">
           <img
             src="./images/work/Tonic.png"
             alt="Tonic Image"
             class="snapshot-portfolio"
           />
+          <img
+            src="./images/desktop/Portoflio_Card/nature.png"
+            alt="Nature"
+            class="desktop-portfolio-img"
+          />
+
           <div class="left-block">
             <div class="title-box">
               <h2 class="project-title">Tonic</h2>
@@ -86,17 +108,23 @@
               </ul>
             </div>
             <div class="action-box">
-              <button class="btn">See Project</button>
+              <button class="btn" type="button">See Project</button>
             </div>
           </div>
         </div>
         <!-- End of first card -->
-        <div class="card-works">
-          <img
-            src="./images/work/multipost.png"
-            alt="Tonic Image"
-            class="snapshot-portfolio"
-          />
+        <div id="card2" class="card-works">
+            <img
+              src="./images/work/multipost.png"
+              alt="Tonic Image"
+              class="snapshot-portfolio"
+            />
+            <img
+              src="./images/desktop/Portoflio_Card/art.png"
+              alt="Art"
+              class="desktop-portfolio-img"
+            />
+
           <div class="left-block">
             <div class="title-box">
               <h2 class="project-title">Multi-post Stories</h2>
@@ -120,17 +148,23 @@
               </ul>
             </div>
             <div class="action-box">
-              <button class="btn">See Project</button>
+              <button class="btn" type="button">See Project</button>
             </div>
           </div>
         </div>
         <!-- End of second card -->
-        <div class="card-works">
-          <img
-            src="./images/work/Tonic.png"
-            alt="Tonic Image"
-            class="snapshot-portfolio"
-          />
+        <div id="card3" class="card-works">
+            <img
+              src="./images/work/Tonic.png"
+              alt="Tonic Image"
+              class="snapshot-portfolio"
+            />
+            <img
+              src="./images/desktop/Portoflio_Card/facebook.png"
+              alt="facebook"
+              class="desktop-portfolio-img"
+            />
+
           <div class="left-block">
             <div class="title-box">
               <h2 class="project-title">Tonic2</h2>
@@ -154,17 +188,23 @@
               </ul>
             </div>
             <div class="action-box">
-              <button class="btn">See Project</button>
+              <button class="btn" type="button">See Project</button>
             </div>
           </div>
         </div>
         <!-- End of third card -->
-        <div class="card-works">
-          <img
-            src="./images/work/Tonic.png"
-            alt="Tonic Image"
-            class="snapshot-portfolio"
-          />
+        <div id="card4" class="card-works">
+            <img
+              src="./images/work/Tonic.png"
+              alt="Tonic Image"
+              class="snapshot-portfolio"
+            />
+            <img
+              src="./images/desktop/Portoflio_Card/uber.png"
+              alt="uber"
+              class="desktop-portfolio-img"
+            />
+
           <div class="left-block">
             <div class="title-box">
               <h2 class="project-title">Multi-post Stories</h2>
@@ -188,7 +228,7 @@
               </ul>
             </div>
             <div class="action-box">
-              <button class="btn">See Project</button>
+              <button class="btn" type="button">See Project</button>
             </div>
           </div>
         </div>
@@ -241,7 +281,7 @@
               </li>
             </ul>
           </div>
-          <button class="btn">Get my resume</button>
+          <button class="btn" type="button">Get my resume</button>
         </div>
         <!-- End of top -->
         <ul class="skillset">
@@ -282,7 +322,9 @@
         </ul>
         <!-- End of SkillSet -->
       </section>
-      <!-- CONTACT FORM -->
+      <!-- End of Myself Section -->
+
+      <!-- CONTACT SECTION -->
       <section class="white-bg">
         <div class="contact-section">
           <h2 class="contact-heading">Contact me</h2>

@@ -13,11 +13,15 @@ body {
   background: #e5e5e5;
 }
 
+/* TOP BAR */
+
 .top-bar {
   width: 375px;
   height: 44px;
   background-color: #fff;
 }
+
+/* HEADER */
 
 .toolbar {
   display: flex;
@@ -26,6 +30,10 @@ body {
   padding-right: 16px;
   background-color: #fff;
   width: 375px;
+}
+
+.toolbar .navbar-list {
+  display: none;
 }
 
 .logo {
@@ -45,6 +53,7 @@ body {
   text-decoration: none;
 }
 
+/* Headline Section */
 .headline {
   width: 375px;
   height: 718px;
@@ -131,6 +140,10 @@ body {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+}
+
+.desktop-portfolio-img {
+  display: none;
 }
 
 .left-block {
@@ -609,4 +622,234 @@ textarea {
 
 .contact-form textarea::placeholder {
   color: #b3bac5;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+
+  .toolbar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 143px;
+    padding-right: 142px;
+  }
+
+  .toolbar .icon {
+    display: none;
+  }
+
+  .toolbar ul {
+    list-style-type: none;
+  }
+
+  .toolbar a {
+    text-decoration: none;
+  }
+
+  .toolbar .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-right: 80px;
+  }
+
+  /* Desktop Headline Section */
+
+  .headline {
+    width: 100%;
+    height: 846px;
+    background-image: url("./images/desktop/Header\ bg.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 24px 70px 260px;
+    border-bottom-left-radius: 80px;
+  }
+
+  .headline h1 {
+    width: 420px;
+    height: 122px;
+    margin-bottom: 0;
+    margin-top: 200px;
+  }
+
+  .headline p {
+    width: 720px;
+    height: 98px;
+    margin-bottom: 0;
+  }
+
+  /* Work Section */
+
+  #work {
+    padding: 114px 142px;
+    justify-content: center;
+  }
+
+  .card-works {
+    display: flex;
+    flex-direction: row;
+    width: 1156px;
+    height: 496px;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .snapshot-portfolio {
+    display: none;
+  }
+
+  .desktop-portfolio-img {
+    display: block;
+    width: auto;
+    border-radius: 8px;
+  }
+
+  .left-block {
+    width: 544px;
+    height: 445px;
+    padding: 24px;
+  }
+
+  #card2 .left-block,
+  #card4 .left-block {
+    order: -1;
+  }
+
+  .left-block .title-box {
+    width: auto;
+  }
+
+  .left-block .project-title {
+    width: auto;
+  }
+
+  .left-block .description-box {
+    width: auto;
+  }
+
+  /* About Section */
+
+  #aboutmyself {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 49px;
+    padding: 0 142px;
+    width: auto;
+    height: 724px;
+  }
+
+  #aboutmyself .top {
+    width: 447px;
+    gap: 25px;
+  }
+
+  #aboutmyself .skillset {
+    width: 684px;
+    height: 360px;
+  }
+
+  #aboutmyself .top .para {
+    width: auto;
+  }
+
+  .skillset .languages {
+    width: 684px;
+    height: 216px;
+  }
+
+  .skillset .languages .lang-head {
+    width: 684px;
+  }
+
+  .skillset .frameworks {
+    width: 684px;
+  }
+
+  .skillset .skills {
+    width: 684px;
+  }
+
+  .skillset .language-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skillset .lang {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 122px;
+    height: auto;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .skillset .lang img {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skillset .language-list h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Contact Section */
+
+  .white-bg {
+    background-color: #fff;
+    width: 100%;
+    height: 846px;
+  }
+
+  .contact-section {
+    background-color: #6070ff;
+    width: 100%;
+    height: 846px;
+    background-image: url(./images/desktop/contact\ form\ background\ shapes.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .contact-section .contact-heading {
+    width: 801px;
+  }
+
+  .contact-section .contact-para {
+    width: 569px;
+  }
+
+  .contact-form {
+    width: 447px;
+  }
+
+  .contact-form .btn-contact {
+    text-align: center;
+    margin: auto;
+  }
 }
