@@ -42,6 +42,11 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .logo a {
@@ -308,6 +313,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition: background-color 1s ease-in, color 1s ease-in;
 }
 
 .btn:hover {
