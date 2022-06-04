@@ -42,6 +42,11 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .logo a {
@@ -54,6 +59,7 @@ body {
 }
 
 /* Headline Section */
+
 .headline {
   width: 375px;
   height: 718px;
@@ -308,6 +314,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition: background-color 1s ease-in, color 1s ease-in;
 }
 
 .btn:hover {
@@ -534,6 +541,7 @@ body {
 }
 
 /* CONTACT SECTION */
+
 .white-bg {
   background-color: #fff;
   width: 375px;
@@ -625,6 +633,7 @@ textarea {
 }
 
 /* DESKTOP VERSION */
+
 @media only screen and (min-width: 768px) {
   .top-bar {
     display: none;
@@ -718,6 +727,11 @@ textarea {
     display: block;
     width: auto;
     border-radius: 8px;
+    transition: all 0.5s ease-in;
+  }
+
+  .desktop-portfolio-img:hover {
+    transform: scale(1.05);
   }
 
   .left-block {
