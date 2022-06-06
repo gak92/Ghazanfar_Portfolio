@@ -28,6 +28,9 @@
 - GitHub: Ghazanfar Ali [@gak92](https://github.com/gak92)
 - LinkedIn: Ghazanfar Ali (https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
+## Links (Online Version)
+
+- https://gak92.github.io/Ghazanfar_Portfolio/
 
 ## 🤝 Contributing
 
