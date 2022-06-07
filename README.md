@@ -39,6 +39,10 @@
 👤 **Author2**
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 
+## Links (Online Version)
+
+- https://gak92.github.io/Ghazanfar_Portfolio/
+
 
 ## 🤝 Contributing
 
