@@ -21,12 +21,23 @@
 **https://github.com/gak92/Ghazanfar_Portfolio.git**
 
 
+## Accessibility Features Added
+
+- Title added
+- Updated heading in orders
+- Used alt attribute in image tags
+- Used aria-label in input fields
+- Used tabindex
+
 ## Authors
 
 👤 **Author1**
 
 - GitHub: Ghazanfar Ali [@gak92](https://github.com/gak92)
 - LinkedIn: Ghazanfar Ali (https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
+
+👤 **Author2**
+- GitHub: [@githubhandle](https://github.com/ogagaoghene)
 
 
 ## 🤝 Contributing
