@@ -61,7 +61,6 @@ body {
   flex-direction: column;
   list-style-type: none;
   background-color: #6070ffdc;
-  /* opacity: 0.9; */
   backdrop-filter: blur(4px);
   position: absolute;
   top: 0;
@@ -124,7 +123,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  list-style: 20px;
   color: #172b4d;
   display: flex;
   align-items: center;
