@@ -12,10 +12,9 @@ menu.addEventListener("click", () => {
 
 closeButton.addEventListener("click", closeMobileMenu);
 
-for(let navitem of navItems){
+for (let navitem of navItems) {
   navitem.addEventListener("click", closeMobileMenu);
 }
-
 
 function closeMobileMenu() {
   navbar.classList.remove("navbar--open");

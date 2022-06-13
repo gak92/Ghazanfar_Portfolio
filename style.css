@@ -46,13 +46,11 @@ body {
   font-size: 30px;
   cursor: pointer;
   font-weight: bold;
-
 }
 
 .menu.menu--close {
   display: none;
 }
-
 
 .toolbar .navbar-list {
   display: none;
@@ -72,15 +70,6 @@ body {
   right: 0;
   padding: 100px 0 0 30px;
   margin: 0;
-}
-
-.toolbar .navbar-list.navbar--open .navbar-item a {
-  font-size: 30px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 50px;
-  text-decoration: none;
-  line-height: 4rem;
 }
 
 .logo {
@@ -103,6 +92,15 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.toolbar .navbar-list.navbar--open .navbar-item a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-decoration: none;
+  line-height: 4rem;
 }
 
 /* Headline Section */
