@@ -32,6 +32,23 @@ body {
   width: 375px;
 }
 
+.bi-x {
+  display: none;
+}
+
+.bi-x.x--open {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  color: rgb(255, 255, 255);
+  z-index: 999;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
 .toolbar .navbar-list {
   display: none;
 }
