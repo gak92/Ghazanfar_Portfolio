@@ -36,6 +36,21 @@ body {
   display: none;
 }
 
+.toolbar .navbar-list.navbar--open {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #6070ffce;
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 100px 0 0 30px;
+  margin: 0;
+}
+
 .logo {
   width: 76px;
   height: 20px;
@@ -696,8 +711,8 @@ textarea {
   }
 
   .headline p {
-    width: 720px;
-    height: 98px;
+    width: 50%;
+    height: auto;
     margin-bottom: 0;
   }
 
