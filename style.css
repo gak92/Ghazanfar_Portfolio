@@ -49,6 +49,11 @@ body {
 
 }
 
+.menu.menu--close {
+  display: none;
+}
+
+
 .toolbar .navbar-list {
   display: none;
 }
@@ -57,7 +62,8 @@ body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  background-color: #6070ffce;
+  background-color: #6070ffdc;
+  /* opacity: 0.9; */
   backdrop-filter: blur(4px);
   position: absolute;
   top: 0;
@@ -66,6 +72,15 @@ body {
   right: 0;
   padding: 100px 0 0 30px;
   margin: 0;
+}
+
+.toolbar .navbar-list.navbar--open .navbar-item a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-decoration: none;
+  line-height: 4rem;
 }
 
 .logo {
