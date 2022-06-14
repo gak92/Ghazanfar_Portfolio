@@ -19,10 +19,8 @@ function closeMobileMenu() {
 
 closeButton.addEventListener('click', closeMobileMenu);
 
-for (const navitem of navItems) {
+console.log(navItems);
+Array.from(navItems).forEach((navitem) => {
+  console.log(navitem);
   navitem.addEventListener('click', closeMobileMenu);
-}
-
-// navItems.forEach(function close(navitem) {
-//   navitem.addEventListener('click', closeMobileMenu);
-// });
+});
