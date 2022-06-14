@@ -1,3 +1,5 @@
+if(typeof window !== 'undefined') {
+
 const menu = document.getElementsByClassName('menu')[0];
 const navbar = document.getElementsByClassName('navbar-list')[0];
 const closeButton = document.getElementsByClassName('bi-x')[0];
@@ -33,3 +35,5 @@ Array.from(navItems).forEach((navitem) => {
   // console.log(navitem);
   navitem.addEventListener('click', closeMobileMenu);
 });
+
+}
