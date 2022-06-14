@@ -21,6 +21,6 @@ closeButton.addEventListener('click', closeMobileMenu);
 
 console.log(navItems);
 Array.from(navItems).forEach((navitem) => {
-  console.log(navitem);
+  // console.log(navitem);
   navitem.addEventListener('click', closeMobileMenu);
 });
