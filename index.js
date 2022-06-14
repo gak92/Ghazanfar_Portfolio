@@ -1,3 +1,10 @@
+  const menu = document.getElementsByClassName('menu')[0];
+  const navbar = document.getElementsByClassName('navbar-list')[0];
+  const closeButton = document.getElementsByClassName('bi-x')[0];
+  const navItems = document.getElementsByClassName('navbar-item');
+  const headline = document.getElementsByClassName('headline')[0];
+  const logo = document.getElementsByClassName('logo')[0];
+
 function blur(number) {
   headline.style.filter = `blur(${number}px)`;
   logo.style.filter = `blur(${number}px)`;
@@ -12,13 +19,6 @@ function closeMobileMenu() {
 }
 
 if (typeof window !== 'undefined') {
-  const menu = document.getElementsByClassName('menu')[0];
-  const navbar = document.getElementsByClassName('navbar-list')[0];
-  const closeButton = document.getElementsByClassName('bi-x')[0];
-  const navItems = document.getElementsByClassName('navbar-item');
-  const headline = document.getElementsByClassName('headline')[0];
-  const logo = document.getElementsByClassName('logo')[0];
-
   menu.addEventListener('click', () => {
     navbar.classList.add('navbar--open');
     document.body.style.overflow = 'hidden';
@@ -32,5 +32,4 @@ if (typeof window !== 'undefined') {
   Array.from(navItems).forEach((navitem) => {
     navitem.addEventListener('click', closeMobileMenu);
   });
-
 }
