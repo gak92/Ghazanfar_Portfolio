@@ -365,14 +365,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
-  padding-right: 2px;
+  width: 95%;
 }
 
 .wrapper--open .card-works {
   margin: 0 auto;
   overflow-y: auto;
 }
+
+.wrapper--open #close-project{
+  color: #67798E;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.wrapper--open .description-box {
+  min-height: 220px;
+  margin-bottom: 20px;
+}
+
+.wrapper--open .hr-line {
+  width: 98%;
+  border: 1px solid #EBECF0;
+  margin: 12px 4px;
+}
+
+.wrapper--open .action-box {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.wrapper--open .btn-images {
+  margin-left: 13px;
+}
+
+
 /* BUTTON */
 
 .btn {
