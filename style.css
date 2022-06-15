@@ -205,7 +205,7 @@ body {
   padding: 0;
   gap: 12px;
   width: 295px;
-  height: 288px;
+  /* height: 288px; */
 }
 
 .left-block .title-box {
@@ -357,7 +357,7 @@ body {
   right: 0;
   margin: 0 auto;
   z-index: 10;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 .wrapper.wrapper--open {
@@ -373,7 +373,8 @@ body {
 
 .wrapper--open .card-works {
   margin: 0 auto;
-  overflow-y: auto;
+  min-height: 690px;
+  /* overflow-y: auto; */
 }
 
 .wrapper--open #close-project {
@@ -395,7 +396,8 @@ body {
 }
 
 .wrapper--open .description-box {
-  min-height: 220px;
+  font-size: 14px;
+  min-height: 200px;
   margin-bottom: 20px;
 }
 
@@ -850,8 +852,10 @@ textarea {
     padding: 24px;
   }
 
-  .wrapper.wrapper--open .left-block {
+  .wrapper.wrapper--open .popup-card .left-block {
     width: 100%;
+    height: auto;
+    margin-bottom: 0;
   }
 
   #card2 .left-block,
