@@ -341,7 +341,8 @@ body {
   display: flex;
   align-items: center;
 }
-/* popup work card */
+
+/* Mobile Version Popup work card */
 .wrapper {
   background: #c1c7d0e5;
   display: none;
@@ -736,7 +737,7 @@ textarea {
   color: #b3bac5;
 }
 
-/* DESKTOP VERSION */
+/* ============================================================ DESKTOP VERSION */
 
 @media only screen and (min-width: 768px) {
   .top-bar {
@@ -860,6 +861,45 @@ textarea {
   .left-block .description-box {
     width: auto;
   }
+
+/* Desktop Version Popup work card */
+
+.wrapper.wrapper--open .popup-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1156px;
+}
+
+.wrapper.wrapper--open .left-block {
+  width: 100%;
+}
+
+.wrapper.wrapper--open .left-block .title-box {
+  width: 100%;
+}
+
+.wrapper.wrapper--open .popup-card .left-block .project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper.wrapper--open .popup-card .desktop-portfolio-img {
+  width: 100%;
+}
+
+.wrapper.wrapper--open .popup-card .bottom-box {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  height: auto;
+}
+
+.wrapper.wrapper--open .description-box {
+  height: 100%;
+}
+
 
   /* About Section */
 

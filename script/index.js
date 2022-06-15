@@ -64,4 +64,3 @@ closeproject.addEventListener('click', () => {
   enableScroll();
   wrapper.classList.remove('wrapper--open');
 });
-
