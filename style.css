@@ -344,7 +344,7 @@ body {
 /* popup work card */
 .wrapper {
   background: #c1c7d0e5;
-  display: flex;
+  display: none;
   align-items: start;
   position: fixed;
   width: 100%;
@@ -357,12 +357,13 @@ body {
   padding: 50px 0;
 }
 
-.wrapper.wrapper--open{
+.wrapper.wrapper--open {
   display: flex;
 }
 
-.wrapper .card-works{
+.wrapper--open .card-works {
   margin: 0 auto;
+  overflow-y: auto;
 }
 /* BUTTON */
 
