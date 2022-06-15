@@ -5,7 +5,6 @@ const navItems = document.getElementsByClassName('navbar-item');
 const headline = document.getElementsByClassName('headline')[0];
 const logo = document.getElementsByClassName('logo')[0];
 
-
 // Function to blur the background
 function blur(headline, logo, number) {
   headline.style.filter = `blur(${number}px)`;
@@ -42,7 +41,6 @@ function closeMenu() {
 closeButton.addEventListener('click', () => {
   closeMenu();
 });
-
 
 // Close Menu when click on Menu option
 Array.from(navItems).forEach((navitem) => {
@@ -116,7 +114,7 @@ const mycards = [
     only five centuries, but also the leap into electronic typesetting,
     remaining essent`,
     tags: ['HTML', 'CSS', 'Javascript'],
-  }
+  },
 ];
 
 // Function to put data dynamically on the popup card
@@ -140,7 +138,7 @@ function openCard(id) {
   cardDescription.innerHTML = card.description;
 
   const cardTags = document.querySelectorAll('#card-tags li');
-  for(let i=0; i<cardTags.length; i++) {
+  for (let i = 0; i < cardTags.length; i += 1) {
     cardTags[i].innerHTML = card.tags[i];
   }
 
@@ -154,7 +152,7 @@ function openCard(id) {
 }
 
 // Open Project Pop up Window
-seeBtn.forEach(btn => {
+seeBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     openCard(btn.dataset.cardid);
   });
