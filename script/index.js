@@ -1,3 +1,13 @@
+const menu = document.getElementsByClassName('menu')[0];
+const navbar = document.getElementsByClassName('navbar-list')[0];
+const closeButton = document.getElementsByClassName('bi-x')[0];
+const navItems = document.getElementsByClassName('navbar-item');
+const headline = document.getElementsByClassName('headline')[0];
+const logo = document.getElementsByClassName('logo')[0];
+const seeBtn = document.getElementsByClassName('see_project')[0];
+const wrapper = document.getElementsByClassName('wrapper')[0];
+const closeproject = document.getElementById('close-project');
+
 function blur(headline, logo, number) {
   headline.style.filter = `blur(${number}px)`;
   logo.style.filter = `blur(${number}px)`;
@@ -11,19 +21,16 @@ function enableScroll() {
   document.body.style.overflowY = 'auto';
 }
 
-if (typeof window !== 'undefined') {
-  const menu = document.getElementsByClassName('menu')[0];
-  const navbar = document.getElementsByClassName('navbar-list')[0];
-  const closeButton = document.getElementsByClassName('bi-x')[0];
-  const navItems = document.getElementsByClassName('navbar-item');
-  const headline = document.getElementsByClassName('headline')[0];
-  const logo = document.getElementsByClassName('logo')[0];
-  const seeBtn = document.getElementsByClassName('see_project')[0];
-  const wrapper = document.getElementsByClassName('wrapper')[0];
-
+// if (typeof window !== 'undefined') {
+  
   seeBtn.addEventListener('click', () => {
     stopScroll();
-    wrapper.classList.add("wrapper--open");
+    wrapper.classList.add('wrapper--open');
+  });
+
+  closeproject.addEventListener('click', () => {
+    enableScroll();
+    wrapper.classList.remove('wrapper--open');
   });
 
   menu.addEventListener('click', () => {
@@ -51,4 +58,4 @@ if (typeof window !== 'undefined') {
       blur(headline, logo, 0);
     });
   });
-}
+// }
