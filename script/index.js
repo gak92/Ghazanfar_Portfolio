@@ -49,10 +49,6 @@ Array.from(navItems).forEach((navitem) => {
   });
 });
 
-const seeBtn = document.querySelectorAll('.see_project');
-const wrapper = document.getElementsByClassName('wrapper')[0];
-const closeproject = document.getElementById('close-project');
-
 // Data to put on pop up cards
 const mycards = [
   {
@@ -117,49 +113,147 @@ const mycards = [
   },
 ];
 
+const seeBtn = document.querySelectorAll('.see_project');
+const wrapper = document.getElementsByClassName('wrapper')[0];
+
 // Function to put data dynamically on the popup card
 function openCard(id) {
   id -= 1;
   const card = mycards[id];
 
-  const cardTitle = document.getElementById('card-title');
-  cardTitle.innerHTML = card.project_title;
+  let modalWrapper = `
+    <div id="card1" class="card-works popup-card">
+      <div class="left-block" id="top-box">
+        <div class="title-box">
+          <div class="project-top">
+            <h2 class="project-title" id="card-title">${card.project_title}</h2>
+            <i class="bi bi-x-lg" id="close-project"></i>
+          </div>
+          <div class="canopy">
+            <div class="client" id="card-client">${card.client}</div>
+            <div class="counter"></div>
+            <div class="role" id="card-role">${card.role}</div>
+            <div class="counter"></div>
+            <div class="year" id="card-year">${card.year}</div>
+          </div>
+        </div>
+      </div>
 
-  const cardClient = document.getElementById('card-client');
-  cardClient.innerHTML = card.client;
+      <img
+        src="${card.mobile_img}"
+        alt="Tonic Image"
+        class="snapshot-portfolio"
+        id="mobile-image"
+      />
+      <img
+        src="${card.desktop_img}"
+        alt="Nature"
+        class="desktop-portfolio-img"
+        id="desktop-image"
+      />
 
-  const cardRole = document.getElementById('card-role');
-  cardRole.innerHTML = card.role;
+      <div class="left-block bottom-box">
+        <p class="description-box" id="card-description">
+          ${card.description}
+        </p>
+        <div class="righ-box">
+          <div class="tag-box">
+            <ul class="tags" id="card-tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">Javascript</li>
+            </ul>
+          </div>
+          <div class="hr-line"></div>
+          <div class="action-box">
+            <button class="btn" type="button">
+              See Live
+              <img src="./images/project/seelive.png" alt="See Live Image" class="btn-images">
+            </button>
+            <button class="btn" type="button">
+              See Source
+              <img src="./images/project/github.png" alt="Github Image" class="btn-images">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>`;
 
-  const cardYear = document.getElementById('card-year');
-  cardYear.innerHTML = card.year;
+  // const cardTitle = document.getElementById('card-title');
+  // cardTitle.innerHTML = card.project_title;
 
-  const cardDescription = document.getElementById('card-description');
-  cardDescription.innerHTML = card.description;
+  // const cardClient = document.getElementById('card-client');
+  // cardClient.innerHTML = card.client;
 
-  const cardTags = document.querySelectorAll('#card-tags li');
-  for (let i = 0; i < cardTags.length; i += 1) {
-    cardTags[i].innerHTML = card.tags[i];
+  // const cardRole = document.getElementById('card-role');
+  // cardRole.innerHTML = card.role;
+
+  // const cardYear = document.getElementById('card-year');
+  // cardYear.innerHTML = card.year;
+
+  // const cardDescription = document.getElementById('card-description');
+  // cardDescription.innerHTML = card.description;
+
+  // const cardTags = document.querySelectorAll('#card-tags li');
+  // for (let i = 0; i < cardTags.length; i += 1) {
+  //   cardTags[i].innerHTML = card.tags[i];
+  // }
+
+  // const mobileImage = document.getElementById('mobile-image');
+  // const desktopImage = document.getElementById('desktop-image');
+  // mobileImage.src = card.mobile_img;
+  // desktopImage.src = card.desktop_img;
+
+  const wrapper_container = document.getElementById('wrapper');
+  wrapper_container.innerHTML = modalWrapper; 
+}
+
+openCard(1);
+
+let closeproject = document.getElementById('close-project');
+console.log(closeproject);
+
+function toggleModal() {
+  wrapper.classList.toggle("wrapper--open");
+}
+
+function windowOnClick(event) {
+  if (event.target === wrapper) {
+    // enableScroll();
+    console.log("window close button called");
+    // wrapper.classList.remove('wrapper--open');
+    toggleModal();
   }
-
-  const mobileImage = document.getElementById('mobile-image');
-  const desktopImage = document.getElementById('desktop-image');
-  mobileImage.src = card.mobile_img;
-  desktopImage.src = card.desktop_img;
-
-  stopScroll();
-  wrapper.classList.add('wrapper--open');
 }
 
 // Open Project Pop up Window
 seeBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     openCard(btn.dataset.cardid);
+    // stopScroll();
+    // wrapper.classList.add('wrapper--open');
+    toggleModal();
+    console.log(btn);
+    closeproject = document.getElementById('close-project');
+    console.log('after calling see button: ', closeproject);
   });
 });
 
-// Close Project Pop up Window
-closeproject.addEventListener('click', () => {
-  enableScroll();
-  wrapper.classList.remove('wrapper--open');
+  // Close Project Pop up Window
+closeproject.addEventListener('click', (e) => {
+  // enableScroll();
+  console.log(e);
+  console.log("close button called");
+  // wrapper.classList.remove('wrapper--open');
+  toggleModal();
 });
+
+document.getElementById('wrapper').addEventListener('click', (e) => {
+  console.log(e.target.id);
+  if (e.target.id === 'close-project') {
+    toggleModal();
+  }
+});
+
+
+window.addEventListener("click", windowOnClick);
