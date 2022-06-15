@@ -221,7 +221,7 @@ body {
 
 .left-block .project-title {
   width: 295px;
-  height: 36px;
+  /* height: 36px; */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -238,7 +238,7 @@ body {
   padding: 0;
   gap: 12px;
   width: 236px;
-  height: 32px;
+  /* height: 32px; */
 }
 
 .left-block .client {
@@ -378,6 +378,11 @@ body {
   color: #67798E;
   font-size: 19px;
   font-weight: bold;
+}
+
+.wrapper.wrapper--open .popup-card .left-block .project-top h2 {
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .wrapper--open .description-box {
