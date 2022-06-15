@@ -361,6 +361,14 @@ body {
   display: flex;
 }
 
+.popup-card .project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding-right: 2px;
+}
+
 .wrapper--open .card-works {
   margin: 0 auto;
   overflow-y: auto;

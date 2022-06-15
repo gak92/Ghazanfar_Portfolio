@@ -22,7 +22,6 @@ if (typeof window !== 'undefined') {
   const wrapper = document.getElementsByClassName('wrapper')[0];
 
   seeBtn.addEventListener('click', () => {
-    console.log("i'm working");
     stopScroll();
     wrapper.classList.add("wrapper--open");
   });
