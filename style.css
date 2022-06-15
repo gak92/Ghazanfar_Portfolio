@@ -32,8 +32,45 @@ body {
   width: 375px;
 }
 
+.bi-x {
+  display: none;
+}
+
+.bi-x.x--open {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: block;
+  color: rgb(255, 255, 255);
+  z-index: 999;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu.menu--close {
+  display: none;
+}
+
 .toolbar .navbar-list {
   display: none;
+}
+
+.toolbar .navbar-list.navbar--open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 100px 0 0 30px;
+  margin: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -58,6 +95,15 @@ body {
   text-decoration: none;
 }
 
+.toolbar .navbar-list.navbar--open .navbar-item a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-decoration: none;
+  line-height: 4rem;
+}
+
 /* Headline Section */
 
 .headline {
@@ -79,7 +125,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  list-style: 20px;
   color: #172b4d;
   display: flex;
   align-items: center;
@@ -696,8 +741,8 @@ textarea {
   }
 
   .headline p {
-    width: 720px;
-    height: 98px;
+    width: 50%;
+    height: auto;
     margin-bottom: 0;
   }
 

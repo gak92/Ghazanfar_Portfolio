@@ -37,7 +37,7 @@
 - LinkedIn: Ghazanfar Ali (https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
 👤 **Author2**
-- GitHub: [@githubhandle](https://github.com/ogagaoghene)
+- GitHub: [@bahoz-ali](https://github.com/bahoz-ali)
 
 ## Links (Online Version)
 
