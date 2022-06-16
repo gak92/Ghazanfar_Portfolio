@@ -859,6 +859,7 @@ textarea {
 
   .wrapper.wrapper--open .card-works.popup-card {
     padding: 12px;
+    height: auto;
   }
 
   .wrapper.wrapper--open .popup-card .left-block {
