@@ -234,3 +234,6 @@ function isEmailLowerCase(email = '') {
 
   return false;
 }
+
+const resutl = isEmailLowerCase("Abc@gmail.com");
+alert(result)
