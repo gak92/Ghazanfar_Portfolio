@@ -744,6 +744,12 @@ textarea {
   color: #b3bac5;
 }
 
+.contact-section #form_status {
+  color: #ebebff;
+  margin: 0;
+  font-weight: 400;
+}
+
 /* ============================================================ DESKTOP VERSION */
 
 @media only screen and (min-width: 768px) {
@@ -1028,5 +1034,11 @@ textarea {
   .contact-form .btn-contact {
     text-align: center;
     margin: auto;
+  }
+
+  .contact-section #form_status {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
   }
 }
