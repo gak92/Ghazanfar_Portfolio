@@ -52,12 +52,14 @@ Array.from(navItems).forEach((navitem) => {
 // Data to put on pop up cards
 const mycards = [
   {
+    cardid: 1,
     desktop_img: './images/desktop/Portoflio_Card/nature.png',
     mobile_img: './images/work/Tonic.png',
     project_title: 'Tonic',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
+    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -67,12 +69,14 @@ const mycards = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
+    cardid: 2,
     desktop_img: './images/desktop/Portoflio_Card/art.png',
     mobile_img: './images/work/multipost.png',
     project_title: 'Multi-post Stories',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
+    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -82,12 +86,14 @@ const mycards = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
+    cardid: 3,
     desktop_img: './images/desktop/Portoflio_Card/facebook.png',
     mobile_img: './images/work/Tonic.png',
     project_title: 'Tonic2',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
+    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -97,12 +103,14 @@ const mycards = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
+    cardid: 4,
     desktop_img: './images/desktop/Portoflio_Card/uber.png',
     mobile_img: './images/work/Tonic.png',
     project_title: 'Multi-post Stories',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
+    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -112,6 +120,65 @@ const mycards = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
 ];
+
+const workSection = document.getElementById('work');
+
+function loadCards() {
+  let allCards = '';
+
+  for (let i = 0; i< mycards.length; i += 1) {
+    const card = mycards[i];
+    console.log(card);
+
+    const singleCard = `<div id="card${card.cardid}" class="card-works">
+    <img
+      src="${card.mobile_img}"
+      alt="Tonic Image"
+      class="snapshot-portfolio"
+    />
+    <img
+      src="${card.desktop_img}"
+      alt="Nature"
+      class="desktop-portfolio-img"
+    />
+
+    <div class="left-block">
+      <div class="title-box">
+        <h2 class="project-title">${card.project_title}</h2>
+        <div class="canopy">
+          <div class="client">${card.client}</div>
+          <div class="counter"></div>
+          <div class="role">${card.role}</div>
+          <div class="counter"></div>
+          <div class="year">${card.year}</div>
+        </div>
+      </div>
+      <p class="description-box">
+        ${card.short_desc}
+      </p>
+      <div class="tag-box">
+        <ul class="tags">
+          <li class="tag">HTML</li>
+          <li class="tag">CSS</li>
+          <li class="tag">Javascript</li>
+        </ul>
+      </div>
+      <div class="action-box">
+        <button class="btn see_project" type="button" data-cardid="${card.cardid}">
+          See Project
+        </button>
+      </div>
+    </div>
+  </div>`;
+  allCards += singleCard;
+  }
+
+  workSection.innerHTML = allCards;
+
+}
+
+loadCards();
+
 
 const seeBtn = document.querySelectorAll('.see_project');
 const wrapper = document.getElementsByClassName('wrapper')[0];
