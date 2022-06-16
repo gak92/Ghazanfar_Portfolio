@@ -205,6 +205,7 @@ body {
   padding: 0;
   gap: 12px;
   width: 295px;
+
   /* height: 288px; */
 }
 
@@ -374,6 +375,7 @@ body {
 .wrapper--open .card-works {
   margin: 0 auto;
   min-height: 690px;
+  
   /* overflow-y: auto; */
 }
 
@@ -852,6 +854,15 @@ textarea {
     padding: 24px;
   }
 
+  .wrapper {
+    padding: 20px 142px;
+    overflow-y: auto;
+  }
+
+  .wrapper.wrapper--open .card-works.popup-card {
+    padding: 12px;
+  }
+
   .wrapper.wrapper--open .popup-card .left-block {
     width: 100%;
     height: auto;
@@ -881,6 +892,7 @@ textarea {
     display: flex;
     flex-direction: column;
     max-width: 1156px;
+    min-height: 1163px;
   }
 
   .wrapper.wrapper--open .left-block .title-box {

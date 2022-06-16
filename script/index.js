@@ -121,7 +121,7 @@ function openCard(id) {
   id -= 1;
   const card = mycards[id];
 
-  let modalWrapper = `
+  const modalWrapper = `
     <div id="card1" class="card-works popup-card">
       <div class="left-block" id="top-box">
         <div class="title-box">
@@ -179,48 +179,21 @@ function openCard(id) {
       </div>
     </div>`;
 
-  // const cardTitle = document.getElementById('card-title');
-  // cardTitle.innerHTML = card.project_title;
-
-  // const cardClient = document.getElementById('card-client');
-  // cardClient.innerHTML = card.client;
-
-  // const cardRole = document.getElementById('card-role');
-  // cardRole.innerHTML = card.role;
-
-  // const cardYear = document.getElementById('card-year');
-  // cardYear.innerHTML = card.year;
-
-  // const cardDescription = document.getElementById('card-description');
-  // cardDescription.innerHTML = card.description;
-
-  // const cardTags = document.querySelectorAll('#card-tags li');
-  // for (let i = 0; i < cardTags.length; i += 1) {
-  //   cardTags[i].innerHTML = card.tags[i];
-  // }
-
-  // const mobileImage = document.getElementById('mobile-image');
-  // const desktopImage = document.getElementById('desktop-image');
-  // mobileImage.src = card.mobile_img;
-  // desktopImage.src = card.desktop_img;
-
-  const wrapper_container = document.getElementById('wrapper');
-  wrapper_container.innerHTML = modalWrapper; 
+  const wrapperContainer = document.getElementById('wrapper');
+  wrapperContainer.innerHTML = modalWrapper;
 }
 
 openCard(1);
 
 let closeproject = document.getElementById('close-project');
-console.log(closeproject);
 
 function toggleModal() {
-  wrapper.classList.toggle("wrapper--open");
+  wrapper.classList.toggle('wrapper--open');
 }
 
 function windowOnClick(event) {
   if (event.target === wrapper) {
-    // enableScroll();
-    console.log("window close button called");
+    enableScroll();
     // wrapper.classList.remove('wrapper--open');
     toggleModal();
   }
@@ -230,30 +203,25 @@ function windowOnClick(event) {
 seeBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     openCard(btn.dataset.cardid);
-    // stopScroll();
+    stopScroll();
     // wrapper.classList.add('wrapper--open');
     toggleModal();
-    console.log(btn);
     closeproject = document.getElementById('close-project');
-    console.log('after calling see button: ', closeproject);
   });
 });
 
-  // Close Project Pop up Window
-closeproject.addEventListener('click', (e) => {
-  // enableScroll();
-  console.log(e);
-  console.log("close button called");
+// Close Project Pop up Window
+closeproject.addEventListener('click', () => {
+  enableScroll();
   // wrapper.classList.remove('wrapper--open');
   toggleModal();
 });
 
 document.getElementById('wrapper').addEventListener('click', (e) => {
-  console.log(e.target.id);
   if (e.target.id === 'close-project') {
+    enableScroll();
     toggleModal();
   }
 });
 
-
-window.addEventListener("click", windowOnClick);
+window.addEventListener('click', windowOnClick);
