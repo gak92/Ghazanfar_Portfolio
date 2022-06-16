@@ -321,7 +321,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-//********************* */ Preserve input data into Local Storage
+// Preserve input data into Local Storage
 const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('message');
@@ -329,7 +329,6 @@ const userMessage = document.getElementById('message');
 function saveData(obj) {
   const dataString = JSON.stringify(obj);
   localStorage.setItem('userdata', dataString);
-  console.log(obj);
 }
 
 function loadData(key) {
@@ -342,31 +341,30 @@ function fillFormWithStoredData(storedData) {
   userMessage.innerHTML = storedData.message;
 }
 
-let storedData = loadData('userdata');
-console.log("Stored Data: ", storedData);
+const storedData = loadData('userdata');
 
 if (storedData !== null) {
   fillFormWithStoredData(storedData);
 }
 
-let data = {
+const data = {
   name: userName.value,
   email: userEmail.value,
-  message: userMessage.value
-}
+  message: userMessage.value,
+};
 
 // On change Event Listener to the input field
 userName.addEventListener('change', () => {
-  data['name'] = userName.value;
+  data.name = userName.value;
   saveData(data);
 });
 
 userEmail.addEventListener('change', () => {
-  data['email'] = userEmail.value;
+  data.email = userEmail.value;
   saveData(data);
 });
 
 userMessage.addEventListener('change', () => {
-  data['message'] = userMessage.value;
+  data.message = userMessage.value;
   saveData(data);
 });
