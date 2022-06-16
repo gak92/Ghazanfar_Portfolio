@@ -235,5 +235,22 @@ function isEmailLowerCase(email = '') {
   return false;
 }
 
-const resutl = isEmailLowerCase("Abc@gmail.com");
-alert(result)
+// const result = isEmailLowerCase("Abc@gmail.com");
+// alert(result);
+
+const form = document.getElementById('getintouch');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = form.elements['email'];
+  let emailAddress = email.value;
+
+  if(isEmailLowerCase(emailAddress)) {
+    console.log("email is valid");
+  }
+  else {
+    console.log("not valid email");
+  }
+
+});
