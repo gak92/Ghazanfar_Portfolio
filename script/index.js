@@ -329,6 +329,7 @@ const userMessage = document.getElementById('message');
 function saveData(obj) {
   const dataString = JSON.stringify(obj);
   localStorage.setItem('userdata', dataString);
+  console.log(obj);
 }
 
 function loadData(key) {
@@ -360,5 +361,15 @@ console.log(data);
 // On change Event Listener to the input field
 userName.addEventListener('change', () => {
   data['name'] = userName.value;
+  saveData(data);
+});
+
+userEmail.addEventListener('change', () => {
+  data['email'] = userEmail.value;
+  saveData(data);
+});
+
+userMessage.addEventListener('change', () => {
+  data['message'] = userMessage.value;
   saveData(data);
 });
