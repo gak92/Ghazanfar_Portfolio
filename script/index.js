@@ -126,9 +126,8 @@ const workSection = document.getElementById('work');
 function loadCards() {
   let allCards = '';
 
-  for (let i = 0; i< mycards.length; i += 1) {
+  for (let i = 0; i < mycards.length; i += 1) {
     const card = mycards[i];
-    console.log(card);
 
     const singleCard = `<div id="card${card.cardid}" class="card-works">
     <img
@@ -170,15 +169,13 @@ function loadCards() {
       </div>
     </div>
   </div>`;
-  allCards += singleCard;
+    allCards += singleCard;
   }
 
   workSection.innerHTML = allCards;
-
 }
 
 loadCards();
-
 
 const seeBtn = document.querySelectorAll('.see_project');
 const wrapper = document.getElementsByClassName('wrapper')[0];
