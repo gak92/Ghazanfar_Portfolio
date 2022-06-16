@@ -289,3 +289,34 @@ document.getElementById('wrapper').addEventListener('click', (e) => {
 });
 
 window.addEventListener('click', windowOnClick);
+
+// Form Validation Code here
+function isEmailLowerCase(email = '') {
+  const lowerCaseEmail = email.toLowerCase();
+
+  if (email === lowerCaseEmail && email.includes('@')) return true;
+
+  return false;
+}
+
+function showErrorMessage(msg) {
+  const formStatus = document.getElementById('form_status');
+  formStatus.innerHTML = msg;
+}
+
+const form = document.getElementById('getintouch');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const { email } = form.elements;
+  const emailAddress = email.value;
+
+  if (isEmailLowerCase(emailAddress)) {
+    form.submit();
+    form.reset();
+    showErrorMessage('');
+  } else {
+    showErrorMessage('Email not valid - Should be in Lowercase');
+  }
+});
