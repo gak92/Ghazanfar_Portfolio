@@ -225,3 +225,10 @@ document.getElementById('wrapper').addEventListener('click', (e) => {
 });
 
 window.addEventListener('click', windowOnClick);
+
+// Form Validation Code here
+
+function isEmailValid(){
+  
+}
+
