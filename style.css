@@ -375,8 +375,6 @@ body {
 .wrapper--open .card-works {
   margin: 0 auto;
   min-height: 690px;
-  
-  /* overflow-y: auto; */
 }
 
 .wrapper--open #close-project {
