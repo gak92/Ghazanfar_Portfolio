@@ -227,8 +227,10 @@ document.getElementById('wrapper').addEventListener('click', (e) => {
 window.addEventListener('click', windowOnClick);
 
 // Form Validation Code here
+function isEmailLowerCase(email = '') {
+  const lowerCaseEmail = email.toLowerCase();
 
-function isEmailValid(){
-  
+  if (email === lowerCaseEmail && email.includes('@')) return true;
+
+  return false;
 }
-
