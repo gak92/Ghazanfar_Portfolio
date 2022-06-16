@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *,
 ::before,
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: #e5e5e5;
@@ -110,7 +110,7 @@ body {
   width: 375px;
   height: 718px;
   background-color: #fff;
-  background-image: url("./images/header-shapes\ mobile.png");
+  background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -205,7 +205,8 @@ body {
   padding: 0;
   gap: 12px;
   width: 295px;
-  height: 288px;
+
+  /* height: 288px; */
 }
 
 .left-block .title-box {
@@ -221,7 +222,8 @@ body {
 
 .left-block .project-title {
   width: 295px;
-  height: 36px;
+
+  /* height: 36px; */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -238,7 +240,8 @@ body {
   padding: 0;
   gap: 12px;
   width: 236px;
-  height: 32px;
+
+  /* height: 32px; */
 }
 
 .left-block .client {
@@ -342,8 +345,79 @@ body {
   align-items: center;
 }
 
-/* BUTTON */
+/* Mobile Version Popup work card */
+.wrapper {
+  background: #c1c7d0e5;
+  display: none;
+  align-items: start;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  padding: 10px 0;
+}
 
+.wrapper.wrapper--open {
+  display: flex;
+}
+
+.popup-card .project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.wrapper--open .card-works {
+  margin: 0 auto;
+  min-height: 690px;
+}
+
+.wrapper--open #close-project {
+  color: #67798e;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.skillset h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.wrapper.wrapper--open .popup-card .left-block .project-top h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.wrapper--open .description-box {
+  font-size: 14px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+.wrapper--open .hr-line {
+  width: 98%;
+  border: 1px solid #ebecf0;
+  margin: 12px 4px;
+}
+
+.wrapper--open .action-box {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.wrapper--open .btn-images {
+  margin-left: 13px;
+}
+
+/* BUTTON */
 .btn {
   display: flex;
   flex-direction: row;
@@ -527,13 +601,6 @@ body {
   padding-right: 22px;
 }
 
-.skillset h2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .skillset .language-list {
   display: flex;
   flex-direction: column;
@@ -665,7 +732,7 @@ textarea {
 }
 
 .contact-form textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -677,7 +744,7 @@ textarea {
   color: #b3bac5;
 }
 
-/* DESKTOP VERSION */
+/* ============================================================ DESKTOP VERSION */
 
 @media only screen and (min-width: 768px) {
   .top-bar {
@@ -724,7 +791,7 @@ textarea {
   .headline {
     width: 100%;
     height: 846px;
-    background-image: url("./images/desktop/Header\ bg.svg");
+    background-image: url('./images/desktop/Header\ bg.svg');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -785,6 +852,22 @@ textarea {
     padding: 24px;
   }
 
+  .wrapper {
+    padding: 20px 142px;
+    overflow-y: auto;
+  }
+
+  .wrapper.wrapper--open .card-works.popup-card {
+    padding: 12px;
+    height: auto;
+  }
+
+  .wrapper.wrapper--open .popup-card .left-block {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
   #card2 .left-block,
   #card4 .left-block {
     order: -1;
@@ -800,6 +883,41 @@ textarea {
 
   .left-block .description-box {
     width: auto;
+  }
+
+  /* Desktop Version Popup work card */
+
+  .wrapper.wrapper--open .popup-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1156px;
+    min-height: 1163px;
+  }
+
+  .wrapper.wrapper--open .left-block .title-box {
+    width: 100%;
+  }
+
+  .wrapper.wrapper--open .popup-card .left-block .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wrapper.wrapper--open .popup-card .desktop-portfolio-img {
+    width: 100%;
+  }
+
+  .wrapper.wrapper--open .popup-card .bottom-box {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: auto;
+  }
+
+  .wrapper.wrapper--open .description-box {
+    height: 100%;
   }
 
   /* About Section */
