@@ -320,3 +320,51 @@ form.addEventListener('submit', (event) => {
     showErrorMessage('Email not valid - Should be in Lowercase');
   }
 });
+
+// Preserve input data into Local Storage
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('message');
+
+function saveData(dataObj) {
+  const dataString = JSON.stringify(dataObj);
+  localStorage.setItem('userdata', dataString);
+}
+
+function loadData(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
+function fillFormWithStoredData(storedData) {
+  userName.setAttribute('value', storedData.name);
+  userEmail.setAttribute('value', storedData.email);
+  userMessage.innerHTML = storedData.message;
+}
+
+const storedData = loadData('userdata');
+
+if (storedData !== null) {
+  fillFormWithStoredData(storedData);
+}
+
+const data = {
+  name: userName.value,
+  email: userEmail.value,
+  message: userMessage.value,
+};
+
+// On change Event Listener to the input field
+userName.addEventListener('change', () => {
+  data.name = userName.value;
+  saveData(data);
+});
+
+userEmail.addEventListener('change', () => {
+  data.email = userEmail.value;
+  saveData(data);
+});
+
+userMessage.addEventListener('change', () => {
+  data.message = userMessage.value;
+  saveData(data);
+});

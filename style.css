@@ -728,7 +728,7 @@ textarea {
 }
 
 .contact-form input::placeholder {
-  color: #172b4d;
+  color: #b3bac5;
 }
 
 .contact-form textarea {
@@ -738,6 +738,7 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   resize: none;
+  width: 300px;
 }
 
 .contact-form textarea::placeholder {
@@ -1029,6 +1030,10 @@ textarea {
 
   .contact-form {
     width: 447px;
+  }
+
+  .contact-form textarea {
+    width: 400px;
   }
 
   .contact-form .btn-contact {
