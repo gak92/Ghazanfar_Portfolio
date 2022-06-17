@@ -326,8 +326,8 @@ const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('message');
 
-function saveData(obj) {
-  const dataString = JSON.stringify(obj);
+function saveData(dataObj) {
+  const dataString = JSON.stringify(dataObj);
   localStorage.setItem('userdata', dataString);
 }
 
