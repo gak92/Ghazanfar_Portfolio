@@ -335,7 +335,7 @@ function loadData(key) {
   return JSON.parse(localStorage.getItem(key));
 }
 
-function fillFormWithStoredData(storedData) {
+function fillFormWithStoredData() {
   userName.setAttribute('value', storedData.name);
   userEmail.setAttribute('value', storedData.email);
   userMessage.innerHTML = storedData.message;
