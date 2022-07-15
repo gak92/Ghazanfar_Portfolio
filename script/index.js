@@ -53,13 +53,13 @@ Array.from(navItems).forEach((navitem) => {
 const mycards = [
   {
     cardid: 1,
-    desktop_img: './images/desktop/Portoflio_Card/nature.png',
-    mobile_img: './images/work/Tonic.png',
-    project_title: 'Tonic',
+    desktop_img: './images/desktop/Portoflio_Card/01_Coding_Expo.png',
+    mobile_img: './images/mobile/01_Coding_Expo.png',
+    project_title: 'Coding Expo',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    short_desc: 'A web application for the exhibition for the coding experts; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -67,16 +67,18 @@ const mycards = [
     only five centuries, but also the leap into electronic typesetting,
     remaining essent`,
     tags: ['HTML', 'CSS', 'Javascript'],
+    demo_link: 'https://gak92.github.io/Module01_Capstone_Project/',
+    code_link: 'https://github.com/gak92/Module01_Capstone_Project',
   },
   {
     cardid: 2,
-    desktop_img: './images/desktop/Portoflio_Card/art.png',
-    mobile_img: './images/work/multipost.png',
-    project_title: 'Multi-post Stories',
+    desktop_img: './images/desktop/Portoflio_Card/02_Awesome_Books.png',
+    mobile_img: './images/mobile/02_Awesome_Books.png',
+    project_title: 'Awesome Books',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    short_desc: 'Awesome books app to keep the record of your favourite books; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -84,16 +86,18 @@ const mycards = [
     only five centuries, but also the leap into electronic typesetting,
     remaining essent`,
     tags: ['HTML', 'CSS', 'Javascript'],
+    demo_link: 'https://gak92.github.io/awesome_books_ES6/',
+    code_link: 'https://github.com/gak92/awesome_books_ES6',
   },
   {
     cardid: 3,
-    desktop_img: './images/desktop/Portoflio_Card/facebook.png',
-    mobile_img: './images/work/Tonic.png',
-    project_title: 'Tonic2',
+    desktop_img: './images/desktop/Portoflio_Card/03_Todo_List.png',
+    mobile_img: './images/mobile/03_Todo_List.png',
+    project_title: 'Todo List',
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    short_desc: 'A daily task todo list to organize your work and life; no accounts or sign-ups required.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting
     industry. Lorem Ipsum has been the industry's standard dummy text
     ever since the 1510s, when an unknown printer took a galley of type
@@ -101,6 +105,8 @@ const mycards = [
     only five centuries, but also the leap into electronic typesetting,
     remaining essent`,
     tags: ['HTML', 'CSS', 'Javascript'],
+    demo_link: 'https://github.com/gak92/to_do_list',
+    code_link: 'https://gak92.github.io/to_do_list/dist/',
   },
   {
     cardid: 4,
@@ -118,6 +124,8 @@ const mycards = [
     only five centuries, but also the leap into electronic typesetting,
     remaining essent`,
     tags: ['HTML', 'CSS', 'Javascript'],
+    demo_link: '',
+    code_link: '',
   },
 ];
 
@@ -231,11 +239,11 @@ function openCard(id) {
           <div class="hr-line"></div>
           <div class="action-box">
             <button class="btn" type="button">
-              See Live
+              <a href="${card.demo_link}" target="blank">See Live</a>
               <img src="./images/project/seelive.png" alt="See Live Image" class="btn-images">
             </button>
             <button class="btn" type="button">
-              See Source
+              <a href="${card.code_link}" target="blank">See Source</a>
               <img src="./images/project/github.png" alt="Github Image" class="btn-images">
             </button>
           </div>
