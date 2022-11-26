@@ -110,22 +110,18 @@ const mycards = [
   },
   {
     cardid: 4,
-    desktop_img: './images/desktop/Portoflio_Card/uber.png',
-    mobile_img: './images/work/Tonic.png',
-    project_title: 'Multi-post Stories',
-    client: 'CANOPY',
+    desktop_img: './images/Desktop/Portfolio_Card/04_Home_Budget_App.png',
+    mobile_img: './images/mobile/04_Home_Budget_App.png',
+    project_title: 'Home Budget App',
+    client: 'Microverse',
     role: 'Back End Dev',
     year: '2015',
-    short_desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1510s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting,
-    remaining essent`,
-    tags: ['HTML', 'CSS', 'Javascript'],
-    demo_link: '',
-    code_link: '',
+    short_desc: 'A daily transaction budget app of to keep track of personalized expenses.',
+    description: `A mobile web application where you can manage your budget: you have a list of 
+    transactions associated with a category, so that you can see how much money you spent and on what.`,
+    tags: ['Ruby', 'Ruby on Rails', 'Booststrap'],
+    demo_link: 'https://ror-home-budget-app.herokuapp.com/',
+    code_link: 'https://github.com/gak92/ror-home-budget-app.git',
   },
 ];
 
