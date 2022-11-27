@@ -110,7 +110,7 @@ const mycards = [
   },
   {
     cardid: 4,
-    desktop_img: './images/Desktop/Portfolio_Card/04_Home_Budget_App.png',
+    desktop_img: './images/desktop/Portoflio_Card/04_Home_Budget_App.png',
     mobile_img: './images/mobile/04_Home_Budget_App.png',
     project_title: 'Home Budget App',
     client: 'Microverse',
