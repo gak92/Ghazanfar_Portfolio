@@ -56,57 +56,44 @@ const mycards = [
     desktop_img: './images/desktop/Portoflio_Card/01_Coding_Expo.png',
     mobile_img: './images/mobile/01_Coding_Expo.png',
     project_title: 'Coding Expo',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
+    client: 'Expo',
+    role: 'Front End Dev',
+    year: '2019',
     short_desc: 'A web application for the exhibition for the coding experts; no accounts or sign-ups required.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1510s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting,
-    remaining essent`,
+    description: 'A web application for the exhibition for the coding experts; no accounts or sign-ups required.',
     tags: ['HTML', 'CSS', 'Javascript'],
     demo_link: 'https://gak92.github.io/Module01_Capstone_Project/',
     code_link: 'https://github.com/gak92/Module01_Capstone_Project',
   },
   {
     cardid: 2,
-    desktop_img: './images/desktop/Portoflio_Card/02_Awesome_Books.png',
-    mobile_img: './images/mobile/02_Awesome_Books.png',
-    project_title: 'Awesome Books',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
-    short_desc: 'Awesome books app to keep the record of your favourite books; no accounts or sign-ups required.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1510s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting,
-    remaining essent`,
-    tags: ['HTML', 'CSS', 'Javascript'],
-    demo_link: 'https://gak92.github.io/awesome_books_ES6/',
-    code_link: 'https://github.com/gak92/awesome_books_ES6',
+    desktop_img: './images/desktop/Portoflio_Card/06_space_travellers_hub.png',
+    mobile_img: './images/mobile/06_space_travellers_hub.png',
+    project_title: 'Space Travellers Hub',
+    client: 'Space',
+    role: 'Front End Dev',
+    year: '2020',
+    short_desc: 'A web application for a company that provides commercial and scientific space travel services..',
+    description: `A web application for a company that provides commercial and scientific space travel services. 
+    The application will allow users to book rockets and join selected space missions.`,
+    tags: ['React', 'Redux', 'ES6', 'API'],
+    demo_link: 'https://hub-space-travelers.netlify.app/',
+    code_link: 'https://github.com/gak92/space-travel-hub',
   },
   {
     cardid: 3,
-    desktop_img: './images/desktop/Portoflio_Card/03_Todo_List.png',
-    mobile_img: './images/mobile/03_Todo_List.png',
-    project_title: 'Todo List',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
-    short_desc: 'A daily task todo list to organize your work and life; no accounts or sign-ups required.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1510s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book. It has survived not
-    only five centuries, but also the leap into electronic typesetting,
-    remaining essent`,
-    tags: ['HTML', 'CSS', 'Javascript'],
-    demo_link: 'https://github.com/gak92/to_do_list',
-    code_link: 'https://gak92.github.io/to_do_list/dist/',
+    desktop_img: './images/desktop/Portoflio_Card/05_financial_stock_companies.png',
+    mobile_img: './images/mobile/05_financial_stock_companies.png',
+    project_title: 'Metrics webapp',
+    client: 'React',
+    role: 'Front End Dev',
+    year: '2020',
+    short_desc: 'A web application to get information about the companies listed in stock exchange by fetching data from API.',
+    description: `A web application to get information about the companies listed in stock exchange. 
+    It is build with React/Redux and fetch data using API.`,
+    tags: ['React', 'Redux', 'API'],
+    demo_link: 'https://stock-metrics-webapp.netlify.app/',
+    code_link: 'https://github.com/gak92/metrics-wepapp/',
   },
   {
     cardid: 4,
@@ -115,11 +102,11 @@ const mycards = [
     project_title: 'Home Budget App',
     client: 'Microverse',
     role: 'Back End Dev',
-    year: '2015',
+    year: '2021',
     short_desc: 'A daily transaction budget app of to keep track of personalized expenses.',
     description: `A mobile web application where you can manage your budget: you have a list of 
     transactions associated with a category, so that you can see how much money you spent and on what.`,
-    tags: ['Ruby', 'Ruby on Rails', 'Booststrap'],
+    tags: ['Ruby', 'Rails', 'Postgres'],
     demo_link: 'https://ror-home-budget-app.herokuapp.com/',
     code_link: 'https://github.com/gak92/ror-home-budget-app.git',
   },
@@ -161,9 +148,9 @@ function loadCards() {
       </p>
       <div class="tag-box">
         <ul class="tags">
-          <li class="tag">HTML</li>
-          <li class="tag">CSS</li>
-          <li class="tag">Javascript</li>
+          <li class="tag">${card.tags[0]}</li>
+          <li class="tag">${card.tags[1]}</li>
+          <li class="tag">${card.tags[2]}</li>
         </ul>
       </div>
       <div class="action-box">
@@ -227,9 +214,9 @@ function openCard(id) {
         <div class="righ-box">
           <div class="tag-box">
             <ul class="tags" id="card-tags">
-              <li class="tag">HTML</li>
-              <li class="tag">CSS</li>
-              <li class="tag">Javascript</li>
+              <li class="tag">${card.tags[0]}</li>
+              <li class="tag">${card.tags[1]}</li>
+              <li class="tag">${card.tags[2]}</li>
             </ul>
           </div>
           <div class="hr-line"></div>
