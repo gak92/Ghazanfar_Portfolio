@@ -438,6 +438,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   transition: background-color 1s ease-in, color 1s ease-in;
+  cursor: pointer;
 }
 
 .btn:hover {
