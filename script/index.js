@@ -60,7 +60,7 @@ const mycards = [
     role: 'Front End Dev',
     year: '2019',
     short_desc: 'A web application for the exhibition for the coding experts; no accounts or sign-ups required.',
-    description: `A web application for the exhibition for the coding experts; no accounts or sign-ups required.`,
+    description: 'A web application for the exhibition for the coding experts; no accounts or sign-ups required.',
     tags: ['HTML', 'CSS', 'Javascript'],
     demo_link: 'https://gak92.github.io/Module01_Capstone_Project/',
     code_link: 'https://github.com/gak92/Module01_Capstone_Project',
