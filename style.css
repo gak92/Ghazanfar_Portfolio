@@ -163,6 +163,10 @@ body {
   margin-right: 10px;
 }
 
+.leetcode {
+  opacity: 0.7;
+}
+
 /* WORK SECTION */
 
 #work {
